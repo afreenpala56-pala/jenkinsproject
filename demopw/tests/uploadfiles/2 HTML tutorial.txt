@@ -1,0 +1,418 @@
+HTML Concepts
+=============
+	HTML (HyperText Markup Language) used to create and design the structure of web pages
+	we can define to browser which elements should appear and how they organized
+	where every web element code will be written inside the tags, those tagnames can be given inside <> (i.e. these angle brackets)
+
+	Example:
+		<h1> → heading
+		<p> → paragraph
+		<img> → image
+		<a> → hyperlink
+
+Requirements to practice:
+-------------------------
+1. Visual studio Code (VS Code)Editor:
+2. Browser like Chorme/Edge...etc
+
+Download and Install VS code editor:
+-----------------------------------
+Step 1:
+	download VS code and Install
+	url: https://code.visualstudio.com/download
+Step 2:
+Create Project folder in VS code editor in order to maintain code files
+Navigation:
+open in VS Code 
+procedure:
+Create folder in your system (ex: E:\HTMLDemo) 
+	Goto "File" menu in "VS code editor"
+	    select "Open Folder" option
+		Browser the Folder which you created in your system((ex: E:\HTMLDemo) 
+			Click on “Yes, I trust authors”
+
+===============
+Creating page:
+	select folder in VS Code editor
+		click on file
+			enter name as page1.html
+
+Note:
+html page extension is ".html"
+
+Boilerplate/BoilerCode in VS Code:
+---------------------------------
+A boilerplate means a pre-written standard code template that you often use 
+press:(Shift+1)=>!  (Exclamtion mark) 
+	then click on "!"
+
+template:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+Note:
+you can change title based on reqirement and and also incule/exclude tags in Body section
+
+===================================
+Tags in HTML
+-----------------------------------
+where tagnames can be given inside <> (i.e. these angle brackets)
+following are the different tags we can use in HTML
+
+<html>	Root of an HTML page.
+<head>	Container for metadata (title, CSS, scripts).
+<title>	Defines the page title (shown in browser tab).
+<body>	Contains all visible content of the page.
+<p>	paragraph
+<img> or <svg> image
+<select> static dropdown
+<ol>	ordered list (with bullets)
+<ul>	unorders list
+<table> web table
+<tbody> table body
+<a>	hyperlinks
+<li>	list
+<iframe> frame
+==============================
+heading tag <h1>:
+****************
+heading tag is used to define headings on a webpage.
+There are six levels of headings, from <h1> to <h6>:
+
+<h1> → Main heading (most important, largest text by default)
+
+<h2> → Sub-heading
+
+<h3> → Sub-sub-heading
+
+<h4> → Smaller heading
+
+<h5> → Even smaller heading
+
+<h6> → Least important heading (smallest text by default)
+============
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heading Example</title>
+</head>
+<body>
+  <h1>This is H1 Heading</h1>
+  <h2>This is H2 Heading</h2>
+  <h3>This is H3 Heading</h3>
+  <h4>This is H4 Heading</h4>
+  <h5>This is H5 Heading</h5>
+  <h6>This is H6 Heading</h6>
+</body>
+</html>
+
+Note:
+after creating file with required code, then goto project folder then open that file
+if you done any changes in a file in  VS code editor those to reflect in page try to Refresh the Browser 
+Note:
+using "Live Server"
+	it is an add-on for VS code editor
+	we can open html files using "Live Server"
+	if u performed any changes in opened web page code in VS code editor those will be automatically reflect in Browser window whenever we save changes
+	
+
+================================
+<br> break tag in heading tag:
+The <br> tag in HTML is a line break tag. It forces the text to move to the next line, without starting a new paragraph.
+You can use <br> inside a heading tag if you want your heading text to break into multiple lines.
+example:
+<h1>
+  Welcome to My Website <br>
+  Learn and Explore
+</h1>
+
+Note:
+based on requirement we set header position using "align" option/attribute
+ex:
+<h1 align="center">This is H1 Heading</h1>
+========================
+paragraph tag <p>:
+the paragraph tag is written as <p> ... </p> and it is used to define a block of text as a paragraph
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paragraph Example</title>
+</head>
+<body>
+  <h1>My Web Page</h1>
+  <p>This is my first paragraph. It introduces the content of the page.</p>
+  <p>This is my second paragraph. It gives more details and information.</p>
+</body>
+</html>
+========================
+<br> break tag in <p> tag:
+Yes, you can also use the <br> tag inside a paragraph (<p>) to force a line break without starting a new paragraph
+example:
+<p>
+  This is the first line. <br>
+  This is the second line. <br>
+  And this is the third line.
+</p>
+==========================================================
+
+Divisions and Elements in HTML
+******************************
+Division Tag (<div>)
+<div> stands for division.
+It is a block-level container used to group other HTML elements.
+It doesn’t add any visible effect by itself, but it helps in organizing, styling (CSS), and scripting (JavaScript).
+
+Example:
+<div style="border:1px solid black;">
+  <h2>About Me</h2>
+  <p>My name is Prathap. I love web development.</p>
+</div>
+
+Elements:
+--------
+Elements in HTML
+In HTML, everything is an element.
+An element = Opening tag + Content + Closing tag
+
+Example:
+<p>This is a paragraph element.</p>
+
+
+Attributes in HTML:
+------------------
+Attributes give extra information about an HTML element.
+They are always written in the opening tag.
+example:
+<input type="password" name="pwd">
+
+Common HTML Attributes:
+Global Attributes (work with most elements):
+	id → unique identifier
+	class → assigns a class (for CSS/JS)
+	style → inline CSS styling
+	title → tooltip text when hovering
+	lang → language of content
+	hidden → hides the element
+	href,src,alt,height,width,style...etc
+
+How to view web element attribute values??
+	focus on web element
+		right click on mouse
+		  select "Inspect" option
+			where DOM section will open where corresponding web element code will be highlighted 
+
+
+
+
+
+Links and Images in HTML:
+========================
+a. Links:
+The anchor tag <a> is used to create hyperlinks
+Basic Syntax:
+<a href="URL">Link Text</a>
+Example-1:
+<a href="https://www.google.com">Go to Google</a>
+
+Exmple-2: to appear link as button
+	<button>
+         <a href="https://www.google.co.in">
+            Take me Google
+         </a>
+    	</button>
+
+b. Images:
+Images — <img> Tag
+The image tag <img> is used to display images.
+It is an empty tag (no closing tag, i.e. self closing tag).
+
+Basic Syntax:
+<img src="path-to-image" alt="description">
+Example:
+<img src="photo.jpg" alt="My Photo" width="200" height="150">
+
+Important Attributes:
+	src → path of the image (URL or local file)
+	alt → alternative text (for accessibility / if image fails to load)
+	width & height → control image size
+	title → tooltip on mousehover
+
+List tag:
+=========
+In HTML, lists are used to group related items.
+There are Two main list tags:
+1. Ordered List (<ol>)
+2. Unordered List (<ul>)
+
+1. Ordered List (<ol>)
+Creates a numbered list.
+Each item is wrapped in <li> (list item)
+example:
+<h1 align="center"> List tags </h1>
+
+    <p> Ordered List:Steps to Make Tea</p>
+    <ol>
+        <li>Boil water</li>
+        <li>Add tea leaves</li>
+        <li>Add milk and sugar</li>
+        <li>Stir and serve</li>
+    </ol>
+    
+2. Unordered List (<ul>)
+Creates a bulleted list
+Example:
+<h3>My Hobbies:</h3>
+<ul>
+  <li>Reading</li>
+  <li>Traveling</li>
+  <li>Playing cricket</li>
+</ul>
+
+
+Table tag in HTML (How to create Table)
+=======================================
+when webelements are created/implemented in terms of rows and columns in a page
+then it is called webTable
+	naming convention for WebTable in a HTML page
+	<table></table> --> create a Table
+	<tbody></tbody> --> create Table body
+	<th></th>--> create table header 
+	<tr></tr>--> create Table row
+		number of "tr" tags count is a number of Rows in table
+	<td></td>-->create Cell data/Table data
+		number of "td" tags count in "tr" tag is number of columns in 
+a row
+
+
+Example:
+    <table border="1">
+      <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Place</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Afreen</td>
+        <td>Anantapur</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Praveen</td>
+        <td>Bangalore</td>
+        <td>65</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Pushkar</td>
+        <td>Delhi</td>
+        <td>95</td>
+      </tr>
+    </table>
+</table>
+
+
+select tag in HTML:
+-------------------------
+ which are used to create drop-down menus.(i.e. static dropdowns)
+syntax:
+<select name="fieldname">
+  <option value="value1">Option 1</option>
+  <option value="value2">Option 2</option>
+  <option value="value3">Option 3</option>
+</select>
+
+
+Example-2:A dropdown menu with 3 cities
+<form>
+  <label for="city">Choose a city:</label>
+  <select name="city" id="city">
+    <option value="1">Nellore</option>
+    <option value="2">Hyderabad</option>
+    <option value="3">Chennai</option>
+  </select>
+</form>
+
+Form Tag <form>:
+===============
+The <form> tag defines a section where users can enter data that can be sent to a server
+Example-1:
+<form action="submit.php" method="post">
+  Name: <input type="text" name="username"><br><br>
+  Email: <input type="email" name="email"><br><br>
+  <input type="submit" value="Send">
+</form>
+
+example-2:
+<form action="submit_page.php" method="post">
+   <!-- input fields go here -->
+</form>
+here:
+action → URL of the page/server that will process the form data
+method → HTTP method (GET or POST)
+Note:
+Use <form> when you need user input + submission.
+Use <div> when you just want to organize or style content.
+
+
+=============
+Input Tag <input>
+================
+The <input> tag creates different kinds of form fields.
+It is a self-closing tag
+syntax:
+<input type="type" attributes>
+Common Input Types
+Each type changes the behavior of the input box
+	text
+	password
+	email
+	radio
+	checkbox
+	number
+	date
+Example:
+<form>
+  <!-- Text box -->
+  Name: <input type="text" name="username"><br><br>
+
+  <!-- Password box -->
+  Password: <input type="password" name="pwd"><br><br>
+
+  <!-- Radio buttons -->
+  Gender:
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female<br><br>
+
+  <!-- Checkbox -->
+  Hobbies:
+  <input type="checkbox" name="hobby" value="reading"> Reading
+  <input type="checkbox" name="hobby" value="sports"> Sports<br><br>
+
+  <!-- Email -->
+  Email: <input type="email" name="email"><br><br>
+
+  <!-- Number -->
+  Age: <input type="number" name="age"><br><br>
+
+  <!-- Date -->
+  DOB: <input type="date" name="dob"><br><br>
+
+  <!-- File upload -->
+  Upload File: <input type="file" name="file"><br><br>
+
+  <!-- Submit button -->
+  <input type="submit" value="Submit">
+</form>
+
+
